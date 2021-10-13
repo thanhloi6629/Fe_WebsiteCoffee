@@ -1,5 +1,10 @@
 .menu{
-  padding-top: 157px;
+  // padding-top: 157px;
+    position: fixed;
+    top: -23px;
+    z-index: 99;
+    top: 83px;
+    width: 100%;
   hr{
     margin: 5px 0;
     background-color: $color-purple-0;
@@ -78,12 +83,9 @@
 @media screen and (max-width: 600px) {
   .menu{
     padding: 0;
+    top: 0;
     .navbar{
       .container-fluid{
-        button{
-          .icon{
-          }
-        }
         .logo{
           display: flex;
         }
