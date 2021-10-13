@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Laven Coffee</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/png" href="./img/logo/laven-ngang-nentrang.png" />
+
+  <!-- fa-$ + tab-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link href="https://file.myfontastic.com/jGXWw5kjm2XXuHqm2UCxiN/icons.css" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/utm-avo" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="headerContent row">
+      <div class="headerContent__search col-md-4 col-sm-4">
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Tìm kiếm">
+          <div class="icon"><i class="icon-search" aria-hidden="true"></i></div>
+        </form>
+      </div>
+      <div class="headerContent__logo col-md-4 col-sm-4">
+        <a class="navbar-brand" href="/">
+          <div class="img-logo"><img src="./img/logo/laven-ngang-nentrang.png" alt=""></div>
+        </a>
+      </div>
+      <div class="headerContent__login col-md-4 col-sm-4 d-flex">
+        <div class="headerContent__login__shopping rounded-circle icon"><i class="fas fa-shopping-cart"></i></div>
+        <div class="headerContent__login__user d-flex">
+          <button class="btn--white">Đăng nhập</button>
+          <div class="rounded-circle icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Menu -->
+  <section class="menu">
+    <hr />
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <i class="fas fa-bars icon"></i>
+        </button>
+        <a class="navbar-brand" href="">
+          <div class="logo"><img style="width:100%" src="./img/logo/laven-ngang-nentim.png" alt=""></div>
+        </a>
+        <div class="rounded-circle icon">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <form class="inputMobile">
+            <input class="form-control me-2" type="text" placeholder="Tìm kiếm">
+            <div class="icon"><i class="icon-search" aria-hidden="true"></i></div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thương hiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="bannerLeft row">
+      <div class="bannerLeft col-md-8">
+        <div class="bannerLeft__img">
+          <a href="">
+            <button class="btn btn--purple">Xem thêm</button>
+          </a>
+        </div>
+      </div>
+      <div class="bannerRight col-md-4">
+        <div class="bannerRight__up">
+          <div class="bannerRight__up__img"></div>
+        </div>
+        <div class="bannerRight__down">
+          <div class="bannerRight__down__img"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section class="product">
+    <h1 class="productTitle">SẢN PHẨM NỔI BẬT</h1>
+    <div class="productContent row">
+      <div class="productItem col-md-4">
+        <img src="./img/home/product1.jpg" alt="" data-bs-toggle="modal" data-bs-target="#xuanThi">
+        <div class="modal" id="xuanThi">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn--purple" data-bs-dismiss="modal">X đóng</button>
+              </div>
+              <div class="modal-body">
+                <h1>Xuân Thì</h1>
+                <h6>HƯƠNG VỊ ĐỘC ĐÁO, KHÓ QUÊN NHƯ THUỞ XUÂN THÌ</h6>
+                <div class="modal-body__content row">
+                  <div class="modal-body__item col-md-6">
+                    <p>Xuân Thì là sự kết hợp hoàn hảo của cà phê Robusta và Arabica.
+                      Xuân Thì thích hợp cho những bạn thích vị đắng nhưng sợ say cà phê. Xuân Thì có chút vị chua, làm
+                      cho tách cà phê độc đáo, lạ miệng hơn.
+                    </p>
+                    <div class="d-flex">
+                      <b>Khối lượng</b>
+                      <button class="btn--white" onclick="changePrice(340)">340g</button>
+                      <button class="btn--white" style="margin-left: 7px" onclick="changePrice(500)">500g</button>
+                    </div>
+                  </div>
+                  <div class="modal-body__item col-md-6">
+                    <p>Xuân thì là khoảng thời gian tươi đẹp và đầy thú vị. Điều đó cũng giống như hương
+                      vị của cà phê Xuân Thì vậy: cân bằng giữa vị chua, đắng và ngọt hậu vị. Tất cả đã tạo nên một tách
+                      cà phê khó quên.
+                    </p>
+                    <div class="d-flex">
+                      <b>Giá</b>
+                      <input id="price" disabled value="86.000đ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn--purple">Xem thêm</button>
+                <button type="button" class="btn btn--purple">Mua hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="productItem col-md-4">
+        <img src="./img/home/product2.png" alt="" data-bs-toggle="modal" data-bs-target="#colombia">
+        <div class="modal" id="colombia">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn--purple" data-bs-dismiss="modal">X đóng</button>
+              </div>
+              <div class="modal-body">
+                <h1>Colombia</h1>
+                <div class="modal-body__content row">
+                  <p>Cà phê là một niềm tự hào của vùng đất Colombia xinh đẹp. Với điều kiện trồng hoàn hảo: khí hậu,
+                    đất
+                    trồng, độ cao,… đã giúp Colombia trở thành nước xuất khẩu Arabica lớn nhất.</p>
+                  <p>Với dòng Arabica Colombia của Laven, bạn dễ dàng thưởng thức dòng Arabica ngon của nước Châu Mỹ.
+                  </p>
+                  <div class="modal-body__item col-md-6">
+                    <div class="d-flex pt-2">
+                      <b>Khối lượng</b>
+                      <button class="btn--white">125gram</button>
+                    </div>
+                  </div>
+                  <div class="modal-body__item col-md-6">
+                    <div class="d-flex pt-2">
+                      <b>Giá</b>
+                      <input disabled value="147.000đ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn--purple">Xem thêm</button>
+                <button type="button" class="btn btn--purple">Mua hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="productItem col-md-4">
+        <img src="./img/home/product3.png" alt="" data-bs-toggle="modal" data-bs-target="#homeBlend">
+        <div class="modal" id="homeBlend">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn--purple" data-bs-dismiss="modal">X đóng</button>
+              </div>
+              <div class="modal-body">
+                <h1>Home Blend</h1>
+                <h6>SỰ LỰA CHỌN CỦA NGƯỜI NHẠY CẢM</h6>
+                <div class="modal-body__content row">
+                  <p>Với Home Blend bạn sẽ không còn sợ cảm giác bị say cà phê.</p>
+                  <p>Laven đã kết hợp Robusta tách caffeine và Arabica Colombia mang đến sự cân bằng về hương lẫn vị: vị
+                    đắng dịu, dễ chịu và hương thơm quyến rũ làm bạn khó cưỡng lại.</p>
+                  <div class="modal-body__item col-md-6">
+                    <div class="d-flex">
+                      <b>Khối lượng</b>
+                      <button class="btn--white">125gram</button>
+                    </div>
+                  </div>
+                  <div class="modal-body__item col-md-6">
+                    <div class="d-flex">
+                      <b>Giá</b>
+                      <input disabled value="147.000đ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn--purple">Xem thêm</button>
+                <button type="button" class="btn btn--purple">Mua hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store -->
+  <section class="store animate__animated animate__fadeInUp">
+    <h1 class="storeTitle">CỬA HÀNG LAVEN COFFEE</h1>
+    <div class="storeContent row">
+      <div class="storeItem col-md-4">
+        <div class="storeItem__card">
+          <div class="storeItem__card__img">
+            <img class="" src="./img/home/store1.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">CÀ PHÊ LAVEN COFFEE</h6>
+            <p class="card-text">Laven mang đến những tách cà phê tươi ngon, đảm bảo 100% cà phê thật, không pha thêm
+              bất kì nguyên phụ liệu nào. Có giấy vệ sinh an toàn thực phẩm. Đảm bảo sức khỏe</p>
+          </div>
+        </div>
+      </div>
+      <div class="storeItem col-md-4">
+        <div class="storeItem__card">
+          <div class="storeItem__card__img">
+            <img class="" src="./img/home/store2.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">DỤNG CỤ PHA CHẾ</h6>
+            <p class="card-text">Thỏa sức khám phá tất tần tật dụng cụ pha chế. Mỗi dụng cụ khác nhau sẽ cho ra hương vị
+              thức uống khác nhau. Thỏa niềm đam mê và sáng tạo! Hãy làm món mới theo cách riêng của bạn ngay nhé.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="storeItem col-md-4">
+        <div class="storeItem__card">
+          <div class="storeItem__card__img">
+            <img class="" src="./img/home/store3.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">NGUYÊN LIỆU PHA CHẾ</h6>
+            <p class="card-text">Muốn làm món nào có ngay nguyên liệu đó ngay. Chẳng phải đặt mua nhiều nơi, tốn nhiều
+              công sức, phí vận chuyển. Pha chế dễ dàng và nhanh chóng hơn tại cửa hàng Laven Coffee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trademark -->
+  <section class="trademark">
+    <h1 class="trademarkTitle">THƯƠNG HIỆU LAVEN COFFEE</h1>
+    <div class="trademarkContent row">
+      <div class="trademarkContent__left col-md-5">
+        <img id="imgTrademark" src="./img/home/trademark1.jpg" alt="">
+      </div>
+      <div class="trademarkContent__right col-md-7">
+        <div id="classTrademark1" class="trademarkContent__right__item">
+          <div class="trademarkContent__right__item__title" onmouseover="onHover(1)">
+            <span>1</span>
+            <span>Câu chuyện thương hiệu cà phê Laven Coffee</span>
+            <div class="trademarkContent__right__item__text">
+              <span>Chạm vị cảm xúc</span>
+              <div class="d-flex align-center more">
+                <span class="arrow"></span>
+                <a class="text" href="">Tìm hiểu thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="classTrademark2" class="trademarkContent__right__item pt-3">
+          <div class="trademarkContent__right__item__title" onmouseover="onHover(2)">
+            <span>2</span>
+            <span>Hành trình tạo nên hương vị cà phê Laven Coffee</span>
+            <div class="trademarkContent__right__item__text">
+              <span>Hành trình Farm to cup</span>
+              <div class="d-flex align-center more">
+                <span class="arrow"></span>
+                <a class="text" href="">Tìm hiểu thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="classTrademark3" class="trademarkContent__right__item pt-3">
+          <div class="trademarkContent__right__item__title" onmouseover="onHover(3)">
+            <span>3</span>
+            <span>Nhà máy rang xay cà phê nguyên chất Laven Coffee</span>
+            <div class="trademarkContent__right__item__text">
+              <span>Công nghệ hiện đại</span>
+              <div class="d-flex align-center more">
+                <span class="arrow"></span>
+                <a class="text" href="">Tìm hiểu thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Promotion -->
+  <section class="promotion">
+    <h1 class="promotionTitle">CHƯƠNG TRÌNH ƯU ĐÃI</h1>
+    <div class="promotionContent row">
+      <div class="promotionContent__left col-md-8">
+        <img src="./img/home/promotion1.jpg" alt="">
+        <button class="btn btn--purple">Lấy mã giảm giá</button>
+      </div>
+      <div class="promotionContent__right col-md-4">
+        <div class="promotionContent__right__up"><img src="./img/home/promotion2.jpg" alt=""></div>
+        <div class="promotionContent__right__down"><img src="./img/home/promotion3.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bartending -->
+  <section class="bartending">
+    <h1 class="bartendingTitle animate__animated animate__fadeInUp">PHA CHẾ CÙNG LAVEN</h1>
+    <div class="bartendingCotent row">
+      <div class="bartendingLeft col-md-6">
+        <div class="bartendingLeft__up row">
+          <div class="bartendingLeft__up__img col-md-6">
+            <img src="./img/home/bartending1.jpg" alt="">
+          </div>
+          <div class="bartendingLeft__up__img col-md-6">
+            <img src="./img/home/bartending2.jpg" alt="">
+          </div>
+        </div>
+        <div class="bartendingLeft__down row">
+          <div class="bartendingLeft__down__img col-md-6">
+            <img src="./img/home/bartending3.jpg" alt="">
+          </div>
+          <div class="bartendingLeft__down__img col-md-6">
+            <img src="./img/home/bartending4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bartendingRight col-md-6">
+        <div class="bartendingRight__item row">
+          <div class="video-wrapper col-md-6">
+            <div class="video-container" id="video-container">
+              <video controls id="video1" src="./img/video/Media1.mp4" type="video/mp4">
+              </video>
+              <div class="play-button-wrapper">
+                <div class="icon-play" id="iconPlay1">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper col-md-6">
+            <div class="video-container" id="video-container">
+              <video controls id="video2" src="./img/video/Media2.mp4" type="video/mp4">
+              </video>
+              <div class="play-button-wrapper">
+                <div class="icon-play" id="iconPlay2">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value -->
+  <section class="value">
+    <h1 class="valueTitle">NHỮNG ĐIỀU LÀM NÊN CÀ PHÊ LAVEN COFFEE</h1>
+    <div class="valueContentUp">
+      <h5>GIÁ TRỊ “TỪ TÂM”</h5>
+      <p>Laven luôn cẩn thận và kiểm soát kỹ từ khâu lựa chọn nhân cà phê ở các trang trại xa xôi đến khâu rang xay,
+        đóng gói giao đến tay khách hàng. Tất cả phải được lựa chọn, sàng lọc, kiểm tra, dùng thử đến khi đạt chuẩn.
+        Laven luôn làm việc tận tâm, hết mình. Chính điều đó đã làm nên những tách cà phê “Chạm vị cảm xúc”.</p>
+    </div>
+    <div class="valueContentDown">
+      <div class="valueContentDown__content row">
+        <div class="valueContentDown__item col-md-4">
+          <div class="d-flex justify-content-center">
+            <div class="icon rounded-circle">
+              <i class="fa fal fa-award" aria-hidden="true"></i>
+            </div>
+          </div>
+          <h6>CHẤT LƯỢNG SẢN PHẨM</h6>
+          <p>Các chuyên gia lành nghề sử dụng máy rang công nghệ hiện đại. Đảm bảo cà nguyên chất, có giấy VSANTP.</p>
+        </div>
+        <div class="valueContentDown__item col-md-4">
+          <div class="d-flex justify-content-center">
+            <div class="icon rounded-circle">
+              <i class="icon-handout" aria-hidden="true"></i>
+            </div>
+          </div>
+          <h6>DỊCH VỤ TẬN TÂM</h6>
+          <p>Nguyên liệu cà phê được lựa chọn kỹ trước khi thực hiện rang xay. Quá trình rang có sự kiểm định của các
+            chuyên gia lành nghề</p>
+        </div>
+        <div class="valueContentDown__item col-md-4">
+          <div class="d-flex justify-content-center">
+            <div class="icon rounded-circle">
+              <i class="icon-change-direction" aria-hidden="true"></i>
+            </div>
+          </div>
+          <h6>HOÀN TRẢ MIỄN PHÍ</h6>
+          <p>Nguyên liệu cà phê được lựa chọn kỹ trước khi thực hiện rang xay. Quá trình rang có sự kiểm định của các
+            chuyên gia lành nghề</p>
+        </div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="info">
+    <h1 class="infoTitle animate__animated animate__fadeInUp">THÔNG TIN HAY CÙNG LAVEN</h1>
+    <div class="infoContent row animate__animated animate__fadeInUp animate__delay-1s">
+      <div class="infoContentLeft col-md-5">
+        <div class="infoContentLeft__card">
+          <div class="infoContentLeft__card__img">
+            <img class="" src="./img/home/info-left.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Thói quen uống cà phê mỗi sáng và những tác động không ai ngờ tới</h5>
+            <p class="card-text">Uống cà phê thường xuyên rất có lợi cho sức khỏe. Cà phê thực sự có thể làm nên điều kỳ
+              diệu cho cơ thể bạn và thậm chí có thể giúp bạn giảm cân.</p>
+          </div>
+        </div>
+      </div>
+      <div class="infoContentCenter col-md-5">
+        <div class="infoContentCenter__card d-flex">
+          <div class="infoContentCenter__card__img">
+            <img class="" src="./img/home/info-1.png" alt="Card image">
+          </div>
+          <div class="infoContentCenter__card__content">
+            <p class="infoContentCenter__card__content__title">Chuyện thú vị về “văn hóa cà phê” ở xứ Tây Đô</p>
+            <p class="infoContentCenter__card__content__text">Ngày mới của rất nhiều người dân Tây Đô được bắt đầu bằng
+              ly cà phê vỉa hè, ổ bánh mì, tờ báo.</p>
+          </div>
+        </div>
+        <div class="infoContentCenter__card d-flex">
+          <div class="infoContentCenter__card__img">
+            <img class="" src="./img/home/info2.jpg" alt="Card image">
+          </div>
+          <div class="infoContentCenter__card__content">
+            <p class="infoContentCenter__card__content__title">13 lợi ích của việc uống cà phê mỗi ngày</p>
+            <p class="infoContentCenter__card__content__text">Cà phê là một thức uống được pha chế bằng hạt cà phê rang
+              được lấy từ các loại quả mọng
+              của cây Coffea.</p>
+          </div>
+        </div>
+        <div class="infoContentCenter__card d-flex">
+          <div class="infoContentCenter__card__img">
+            <img class="" src="./img/home/info3.jpg" alt="Card image">
+          </div>
+          <div class="infoContentCenter__card__content">
+            <p class="infoContentCenter__card__content__title">Lý do vì sao uống cà phê buổi sáng tốt hơn uống trà</p>
+            <p class="infoContentCenter__card__content__text">Cà phê và trà là 2 trong số những đồ uống được tiêu thụ
+              nhiều nhất trên toàn thế giới.
+              Tuy nhiên, vào buổi sáng…</p>
+          </div>
+        </div>
+        <div class="infoContentCenter__card d-flex">
+          <div class="infoContentCenter__card__img">
+            <img class="" src="./img/home/info4.jpg" alt="Card image">
+          </div>
+          <div class="infoContentCenter__card__content">
+            <p class="infoContentCenter__card__content__title">Hướng dẫn pha cà phê cốt dừa thơm ngon mát lạnh</p>
+            <p class="infoContentCenter__card__content__text">Vị thơm ngon béo ngậy của dừa quyện với vị đắng của cà phê
+              tạo nên món đồ uống khiến
+              bạn không thể chối từ.</p>
+          </div>
+        </div>
+      </div>
+      <div class="infoContentRight col-md-2">
+        <div class="infoContentRight__content">
+          <div class="infoContentRight__img">
+            <img class="" src="./img/home/infoRight.png" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">CÙNG CHIA SẺ THÔNG TIN</h6>
+            <p class="card-text">Chia sẻ những thông tin hay và hữu ích, chung tay xây dựng cộng đồng FnB cùng Laven
+              Coffee.</p>
+            <p>Những bài viết được nhiều nhiều người bình chọn, bạn sẽ nhận những phần quà cực thiết thực!</p>
+            <a href="">THAM GIA NGAY!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer animate__animated animate__fadeInUp">
+    <div class="footerUp row">
+      <div class="col-md-4">
+        <h6>Hỗ trợ khách hàng</h6>
+        <ul>
+          <li>Chăm sóc khách hàng: <a href="tel:0935 111 814">0935 111 814</a></li>
+          <li>(8h30-18h kể cả T7, CN)</li>
+          <li><a href="/">Các câu hỏi thường gặp</a></li>
+          <li><a href="/">Liên hệ hỗ trợ</a></li>
+          <li><a href="/">Hướng dẫn đặt hàng</a></li>
+          <li><a href="/">Phương thức vận chuyển</a></li>
+          <li><a href="/">Chính sách đổi trả</a></li>
+          <li>Email hỗ trợ: <a href="mailto:cskh@lavencoffee.com">cskh@lavencoffee.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>Về Laven Coffee</h6>
+        <ul>
+          <li><a href="/">Giới thiệu Laven Coffee</a></li>
+          <li><a href="/">Chính sách bảo mật thanh toán</a></li>
+          <li><a href="/">Chính sách bảo mật thông tin cá nhân</a></li>
+          <li><a href="/">Chính sách giải quyết khiếu nại</a></li>
+          <li><a href="/">Điều khoản sử dụng</a></li>
+          <li><a href="/">Hướng dẫn sử dụng tài khoản</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>Hợp tác và liên kết</h6>
+        <ul>
+          <li>Nhà cung cấp</li>
+          <li>Nhà phân phối</li>
+          <li>Liên hệ sỉ: <a href="tel:0934 504 095">0934 504 095</a></li>
+        </ul>
+        <div class="icon">
+          <a href="https://moit.gov.vn/" target="blank">
+            <img style="width: 100%" src="./img/social/bocongthuong.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footerDown row">
+      <h6>Tương tác cùng Laven</h6>
+      <div class="footerDown__content row">
+        <div class="footerDown__content__left col-md-8">
+          <p>Văn phòng: HM Town, 412 Nguyễn Thị Minh Khai, phường 5, quận 3, TP HCM</p>
+          <p>Nhà máy: 502/2A Gia Yên, Gia Tân 3, huyện Thống Nhất, tỉnh Đồng Nai</p>
+        </div>
+        <div class="footerDown__content__right col-md-4 d-flex">
+          <div class="footerDown__content__right__icon">
+            <a href="https://www.facebook.com/coffee.laven" target="blank">
+              <img style="width: 100%" src="./img/social/fb.svg" alt="">
+            </a>
+          </div>
+          <div class="footerDown__content__right__icon">
+            <a href="https://zalo.me/84094513333" target="blank">
+              <img style="width: 100%" src="./img/social/zalo.svg" alt="">
+            </a>
+          </div>
+          <div class="footerDown__content__right__icon">
+            <a href="" target="blank">
+              <img style="width: 100%" src="./img/social/tiktok .svg" alt="">
+            </a>
+          </div>
+          <div class="footerDown__content__right__icon">
+            <a href="" target="blank">
+              <img style="width: 100%" src="./img/social/youtube.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <div class="cd-top js-cd-top">
+    <div class="icon rounded-circle">
+      <i class="fa fa-angle-up"></i>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/backToTop.js"></script>
+  <script src="./js/trademark.js"></script>
+  <script src="./js/product.js"></script>
+  <script src="./js/playVideo.js"></script>
+</body>
+
+</html>

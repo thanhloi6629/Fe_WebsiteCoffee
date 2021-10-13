@@ -1,0 +1,54 @@
+.value{
+  .valueTitle{
+    @include title($color-purple-1, $color-purple-0);
+  }
+  .valueContentUp{
+    padding-top: $pd-2;
+    h5{
+      @include text($color-purple-0, $fs-3, $fw-bold);
+    }
+  }
+  .valueContentDown{
+    padding-top: $pd-3;
+    position: relative;
+    .valueContentDown__content{
+      padding: 0 50px;
+      .valueContentDown__item{
+        z-index: 2;
+        .icon {
+          @include icon($color-purple-1, $color-white-0, $fs-6, $s-1);
+        }
+        h6{
+          @include text($color-purple-0, $fs-0, $fw-bold);
+          padding-top: $pd-2;
+        }
+        p{
+          padding-bottom: 20px;
+        }
+      }
+      .box{
+        position: absolute;
+        background-color: $color-yellow-1;
+        width: 100%;
+        height: 220px;
+        bottom: 0;
+        left: 0;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .valueContentDown__content{
+    .valueContentDown__item{
+      background-color: $color-yellow-1;
+      border-radius: 20px;
+      padding-top: 20px;
+      margin-bottom: $pd-1;
+    }
+    .box{
+      background: none!important;
+    }
+  }
+}

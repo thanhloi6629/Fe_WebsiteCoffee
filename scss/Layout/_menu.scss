@@ -1,0 +1,107 @@
+.menu{
+  padding-top: 157px;
+  hr{
+    margin: 5px 0;
+    background-color: $color-purple-0;
+    opacity: 1;
+  }
+  .navbar{
+    background-color: $color-purple-0;
+    .container-fluid{
+      button{
+        .icon{
+          font-size: 25px;
+          color: $color-yellow-0;
+        }
+      }
+      .logo{
+        width: 60px;
+        height: 50px;
+        display: none;
+      }
+      .icon{
+        @include icon($color-purple-0, $color-yellow-0, 25px, 50px);
+        display: none;
+      }
+    }
+    .collapse{
+      justify-content: center;
+      .inputMobile{
+        display: none;
+       input{
+        @include input($color-yellow-0);
+       }
+      }
+      ul{
+        li{
+          padding: 0 60px;
+          ̃:hover{
+            background-color: $color-white-0;
+          }
+          &:first-child{
+            padding-left: 0;
+          }
+          &:last-child{
+            padding-right: 0;
+          }
+          a{
+            font-weight: $fw-bold;
+            color: $color-yellow-0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu{
+    padding: 0;
+    .navbar{
+      .container-fluid{
+        button{
+          .icon{
+          }
+        }
+      }
+      .collapse{
+        ul{
+          li{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu{
+    padding: 0;
+    .navbar{
+      .container-fluid{
+        button{
+          .icon{
+          }
+        }
+        .logo{
+          display: flex;
+        }
+        .icon{
+          display: flex;
+        }
+      }
+      .collapse{
+        .inputMobile{
+          display: flex;
+          margin-top: 10px;
+        }
+        ul{
+          li{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

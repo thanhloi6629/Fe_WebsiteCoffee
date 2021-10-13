@@ -1,0 +1,15 @@
+.btn--purple {
+    @include button($color-purple-0, $color-yellow-0);
+}
+
+.btn--white {
+    @include button($color-white-0, $color-purple-0);
+    border: 1px solid $color-purple-0;
+    border-radius: 5px;
+    padding: 0 50px;
+    height: $h-0;
+    &:hover{
+      background-color: $color-yellow-0;
+      color: $color-purple-0;
+    }
+}

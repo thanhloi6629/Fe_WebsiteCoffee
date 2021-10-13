@@ -1,0 +1,97 @@
+.trademark{
+  img{
+    width: 100%;
+  }
+  .trademarkTitle{
+    @include title($color-yellow-1, $color-purple-0);
+  }
+  .trademarkContent{
+    .trademarkContent__left{
+
+    }
+    .trademarkContent__right{
+      .trademarkContent__right__item{
+        .trademarkContent__right__item__title{
+          opacity: 0.5;
+          text-align: left;
+          padding-top: $pd-2;
+          @include text ($color-purple-0, $fs-5, $fw-bold);
+          &:hover{
+            cursor: pointer;
+            opacity: 1;
+            text-align: left;
+            border-top: 2px solid $color-purple-0;
+            padding-top: $pd-2;
+            @include text ($color-purple-0, $fs-5, $fw-bold);
+            .trademarkContent__right__item__text{
+              display: flex;
+              .arrow::before{
+                width: 100px;
+              }
+            }
+          }
+        }
+        .trademarkContent__right__item__text{
+          display: none;
+          justify-content: space-between;
+          padding: 0 50px;
+          @include text ($color-yellow-0, $fs-2, $fw-normal);
+          .more{
+            .text{
+              font-weight: $fw-bold-0;
+              text-decoration: none;
+              color: $color-yellow-0;
+            }
+            .arrow{
+              position: relative;
+              display: inline-block;
+              padding: 14px 0;
+              margin-right: 20px;
+              &:before {
+              content: "";
+              display: block;
+              width: 20px;
+              height: 1px;
+              background-color: $color-yellow-0;
+              top: 50%;
+              transition: width 0.5s ease-out;
+            }
+            &:after {
+              content: "";
+              display: block;
+              width: 10px;
+              height: 10px;
+              border-top: 1px solid $color-yellow-0;
+              border-right: 1px solid $color-yellow-0;
+              transform: rotate(45deg);
+              top: calc(50% - 5px);
+              position: absolute;
+              right: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trademark{
+    .trademarkContent__right__item__title{
+      font-size: $fs-2!important;
+    }
+    .trademarkContent__right__item__text{
+      font-size: $fs-0!important;
+      padding: 0 $pd-2!important;
+      .more{
+        font-size: $fs-0!important;
+        .arrow{
+          &:after{
+            top: calc(50% - 12px)!important;
+          }
+        }
+      }
+    }
+  }
+}

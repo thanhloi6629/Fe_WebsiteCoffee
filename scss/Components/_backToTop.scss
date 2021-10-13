@@ -1,0 +1,35 @@
+/* back to top */
+.cd-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  .icon{
+    @include icon($color-purple-0, $color-yellow-0, $fs-5, $s-2);
+  }
+}
+.cd-top.cd-top--show{
+  opacity: 1;
+}
+
+@keyframes fadeInUp{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInDown{
+  0%{
+      transform: translateY(-100px);
+      opacity: 0;
+      }
+  100%{
+      transform: rotate(xx) translateY(0px);
+      opacity: 1;
+      }
+}

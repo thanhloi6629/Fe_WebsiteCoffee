@@ -1,0 +1,67 @@
+.product{
+  img{
+    width: 100%;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .productTitle{
+    @include title($color-white-0, $color-purple-0);
+    border-top: 1px solid $color-purple-0;
+    border-bottom: 1px solid $color-purple-0;
+  }
+  .productContent{
+    justify-content: center;
+    .productItem{
+      border-right: 2px solid $color-purple-1;
+      &:last-child{
+        border: none;
+      }
+      .modal{
+        .modal-dialog{
+          .modal-content{
+            border-radius: 0;
+            border: 1px solid $color-yellow-0;
+            background-color: $color-purple-2;
+            .modal-header{
+              border: none;
+              justify-content: end;
+            }
+            .modal-body{
+              .modal-body__content{
+                .modal-body__item{
+                  p{
+                    text-align: left;
+                  }
+                  div{
+                    align-items: center;
+                    .btn--white, input{
+                      height: 35px;
+                      border-radius: unset;
+                      padding: 0 20px;
+                      margin-left: 30px;
+                      font-weight: $fw-normal;
+                    }
+                    input{
+                      width: 130px;
+                      border: 1px solid $color-purple-0;
+                      background-color: $color-white-0;
+                      color: $color-purple-0;
+                    }
+                  }
+                }
+              }
+              .btn--white{
+                border-radius: none;
+              }
+            }
+            .modal-footer{
+              border: none;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
