@@ -1,14 +1,19 @@
 body {
-  padding: 0 $pd-3;
   color: $color-purple-0;
-  font-family: 'UTM Avo', sans-serif;
-  section {
+  font-family: "UTM Avo", sans-serif;
+  section,
+  footer {
     padding-top: $pd-3;
+    padding-left: $pd-3;
+    padding-right: $pd-3;
   }
 }
 
-@media screen and (max-width: 768px) {
-  body{
-    padding: 0 $pd-1;
+@media screen and (max-width: 600px) {
+  section,
+  footer {
+    padding-top: $pd-3;
+    padding-left: $pd-1 !important;
+    padding-right: $pd-1 !important;
   }
 }

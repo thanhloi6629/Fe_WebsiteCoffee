@@ -1,71 +1,65 @@
-.header{
+.header {
   position: fixed;
-  background-color: $color-white-0;
-  top: 0;
-  z-index: 99;
-  height: 145px;
   width: 100%;
-  .headerContent{
-    display: flex;
-    align-items: center;
-    .headerContent__search{
-      form{
-        position: relative;
-        margin-right: 15%;
-        input{
-          @include input($color-purple-0);
-        }
-        input[type="text"]{
-          color: $color-purple-0;
-          text-align: left;
-          &::placeholder {
-          text-align: right;
-          color: $color-purple-0;
-          margin-right: 20%;
-          }
-        }
-        div{
-          position: absolute;
-          right: 30px;
-          top: -28px;
-          i{
-            font-size: $s-2;
-            background-color: $color-white-0;
-          }
-        }
+  z-index: 99;
+  .navbar {
+    padding: 0 $pd-3;
+    background-color: $color-white-0;
+    .container-fluid {
+      .navbar-brand {
+        width: 120px;
       }
-    }
-    .headerContent__logo{
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .img-logo{
-        width: 150px;
-        height: 150px;
-        img{
-          width: 100%
-        }
-      }
-    }
-    .headerContent__login{
-      .icon{
-        @include icon($color-purple-0, $color-yellow-0, $fs-5, $s-0);
-      }
-      .headerContent__login__shopping{
-        margin-right: 20px;
-      }
-      .headerContent__login__user{
-        position: relative;
-        align-items: center;
-        .icon{
-          position: absolute;
-          right: -30px
-        }
-        &:hover{
-          button, .icon {
-            background-color: $color-yellow-0;
+      .navbar-toggler {
+        padding: 8px 18px;
+        i {
+          color: $color-yellow-0;
+          font-size: $fs-5;
+          &:hover {
             color: $color-purple-0;
+          }
+        }
+      }
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            font-weight: $fw-bold;
+            margin-right: 5px;
+            a:hover {
+              background-color: $color-purple-0;
+              color: $color-yellow-0;
+            }
+          }
+        }
+        .headerLeft {
+          justify-content: center;
+          align-items: center;
+          .headerLeft__shopping {
+            @include icon($color-purple-0, $color-yellow-0, $fs-5, $s-0);
+            margin-right: 20px;
+          }
+          form {
+            position: relative;
+            input {
+              @include input($color-purple-0);
+            }
+            input[type="text"] {
+              color: $color-purple-0;
+              text-align: center;
+              &::placeholder {
+                text-align: right;
+                color: $color-purple-0;
+                margin-right: 25%;
+              }
+            }
+            div {
+              position: absolute;
+              right: 16px;
+              top: -28px;
+              i {
+                font-size: $s-2;
+                background-color: $color-white-0;
+              }
+            }
           }
         }
       }
@@ -74,7 +68,10 @@
 }
 
 @media screen and (max-width: 600px) {
- .header{
-   display: none;
- }
+  .navbar {
+    padding: 0 !important;
+    .navbar-brand {
+      width: 100px !important;
+    }
+  }
 }

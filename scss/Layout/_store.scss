@@ -1,31 +1,37 @@
-.store{
-  .storeTitle{
-    @include title($color-purple-1, $color-purple-0)
+.store {
+  .storeTitle {
+    @include title($color-purple-1, $color-purple-0);
   }
-  .storeContent{
-    justify-content: center;
-    .storeItem{
-      .storeItem__card{
-        .storeItem__card__img{
-          height: $h-1;
-          img{
-            width: 100%;
-            height: 100%;
-            border-radius: unset;
-          }
-        }
-        .card-body{
-          background-color: $color-yellow-1;
-          margin-top: 5px;
-          height: 200px;
-        }
+  .storeItem__card {
+    .storeItem__card__img {
+      height: $h-1;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: unset;
       }
     }
+    .card-body {
+      background-color: $color-yellow-1;
+      margin-top: 5px;
+      height: 200px;
+    }
+  }
+  .storeContent {
+    justify-content: center;
+    .storeItem {
+    }
+  }
+  .storeMobile {
+    display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .storeItem__card{
-    padding-bottom: $pd-1;
+  .storeContent {
+    display: none;
+  }
+  .storeMobile {
+    display: block !important;
   }
 }
