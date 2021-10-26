@@ -75,59 +75,22 @@
   .banner .bannerWeb img {
     width: 100%;
     height: 100%; }
+    .banner .bannerWeb img:hover {
+      cursor: pointer; }
   .banner .bannerWeb .bannerLeft {
     position: relative; }
-    .banner .bannerWeb .bannerLeft .bannerLeft__img {
-      background-image: url("../img/home/xuanthi.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 500px;
-      animation: xuanthi 5s infinite; }
     .banner .bannerWeb .bannerLeft button {
       position: absolute;
       right: 20%;
       bottom: 30px; }
-  .banner .bannerWeb .bannerRight .bannerRight__up .bannerRight__up__img {
-    background-image: url("../img/home/diunhe.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 245px;
-    animation: diunhe 5s infinite; }
+  .banner .bannerWeb .bannerRight .bannerRight__up {
+    height: calc(500px/ 2); }
   .banner .bannerWeb .bannerRight .bannerRight__down {
-    padding-top: 10px; }
-    .banner .bannerWeb .bannerRight .bannerRight__down .bannerRight__down__img {
-      background-image: url("../img/home/satson.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 245px;
-      animation: satson 5s infinite; }
+    padding-top: 10px;
+    height: calc(500px/ 2); }
   .banner .bannerMobile {
     display: none; }
 
-@keyframes xuanthi {
-  0% {
-    background-image: url("../img/home/xuanthi.jpg"); }
-  50% {
-    background-image: url("../img/home/diunhe.jpg"); }
-  100% {
-    background-image: url("../img/home/satson.jpg"); } }
-@keyframes diunhe {
-  0% {
-    background-image: url("../img/home/diunhe.jpg"); }
-  50% {
-    background-image: url("../img/home/satson.jpg"); }
-  100% {
-    background-image: url("../img/home/xuanthi.jpg"); } }
-@keyframes satson {
-  0% {
-    background-image: url("../img/home/satson.jpg"); }
-  50% {
-    background-image: url("../img/home/xuanthi.jpg"); }
-  100% {
-    background-image: url("../img/home/diunhe.jpg"); } }
 @media screen and (max-width: 600px) {
   .banner .bannerWeb {
     display: none; }

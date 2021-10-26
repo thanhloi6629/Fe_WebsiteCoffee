@@ -4,12 +4,13 @@
     img {
       width: 100%;
       height: 100%;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .bannerLeft {
       position: relative;
       .bannerLeft__img {
-        @include image("../img/home/xuanthi.jpg", $h-2);
-        animation: xuanthi 5s infinite;
       }
       button {
         position: absolute;
@@ -19,58 +20,16 @@
     }
     .bannerRight {
       .bannerRight__up {
-        .bannerRight__up__img {
-          @include image("../img/home/diunhe.jpg", 245px);
-          animation: diunhe 5s infinite;
-        }
+        height: calc(#{$h-2}/ 2);
       }
       .bannerRight__down {
         padding-top: $pd-1;
-        .bannerRight__down__img {
-          @include image("../img/home/satson.jpg", 245px);
-          animation: satson 5s infinite;
-        }
+        height: calc(#{$h-2}/ 2);
       }
     }
   }
   .bannerMobile {
     display: none;
-  }
-}
-
-@keyframes xuanthi {
-  0% {
-    background-image: url("../img/home/xuanthi.jpg");
-  }
-  50% {
-    background-image: url("../img/home/diunhe.jpg");
-  }
-  100% {
-    background-image: url("../img/home/satson.jpg");
-  }
-}
-
-@keyframes diunhe {
-  0% {
-    background-image: url("../img/home/diunhe.jpg");
-  }
-  50% {
-    background-image: url("../img/home/satson.jpg");
-  }
-  100% {
-    background-image: url("../img/home/xuanthi.jpg");
-  }
-}
-
-@keyframes satson {
-  0% {
-    background-image: url("../img/home/satson.jpg");
-  }
-  50% {
-    background-image: url("../img/home/xuanthi.jpg");
-  }
-  100% {
-    background-image: url("../img/home/diunhe.jpg");
   }
 }
 
