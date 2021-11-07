@@ -47,10 +47,19 @@
   }
 }
 
-@mixin image ($url, $height){
+@mixin image ($url, $width, $height){
   background-image: url($url);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: $height;
+  width: $width;
+  object-fit: scale-down;
+}
+
+
+@mixin titleNoBold($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+  padding: $pd-1;
 }

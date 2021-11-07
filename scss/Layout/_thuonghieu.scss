@@ -1,0 +1,121 @@
+.brand {
+    .brand__writer{
+        .brand__writer__image {
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            @media screen and (max-width: 600px) {
+                img{
+                    width: 340px;
+                    height: 200px;
+                }
+            }
+            // @include image("/img/thuonghieu/GoiNhoDoiMoiHuongVi.JPG", auto, auto)
+        }
+      
+        .brand__writer__title{
+            @include title($color-white-0, $color-purple-0);
+            img {
+                width: 100vw;
+                height: 100vw;
+              }
+        }
+        .brand__writer__content{
+            width: 75%;
+            margin: 0 auto;
+            justify-content: center;
+            .brand__writer__left{
+                background-color: #FFE699;
+                text-align: left;
+                .card-body{
+                    h2, h3, h5{
+                        text-align: left;
+                    }
+                    hr{
+                        text-align: left;
+                        color: #FFC30E;
+                        height: 3px;
+                    }
+                }
+            }
+    
+            .brand__writer__right{
+                img {
+                    width: 100%;
+                    height: 420px;
+                  }
+            }
+           
+        }
+        @media screen and (max-width: 600px) {
+            .brand__writer__content{
+                width: 100%;
+            }
+        }
+    }
+
+   
+
+   
+    .brand__story {
+        width: 80%;
+        margin: 0 auto;
+       
+        .brand__story__title{
+            @include title($color-purple-1, $color-purple-0);
+           
+        }
+        .brand__story__subtitle{
+            padding: 10px 0;
+            @include title($color-white-0, $color-purple-0);
+            h4{
+                width: 70%;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid $color-purple-0;
+                padding: 20px 0;
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .brand__story {
+            width: 100%;
+            padding: 10px 0;
+            .brand__story__subtitle{
+                h4{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .brand__view{
+        width: 50%;
+        margin: 0 auto;
+        .brand__view__title{
+            @include titleNoBold($color-yellow-3, $color-purple-0);
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .brand__view {
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .brand{
+        .brand__writer{
+            .brand__writer__image {
+                img {
+                    display: none!important;
+                }
+                @include image("/img/thuonghieu/GoiNhoDoiMoiHuongVi.JPG", 355px, 180px)
+            }
+        }
+    }
+    
+}
+
