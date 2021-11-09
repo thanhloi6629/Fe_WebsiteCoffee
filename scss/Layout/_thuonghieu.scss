@@ -1,19 +1,5 @@
 .brand {
     .brand__writer{
-        .brand__writer__image {
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            @media screen and (max-width: 600px) {
-                img{
-                    width: 340px;
-                    height: 200px;
-                }
-            }
-            // @include image("/img/thuonghieu/GoiNhoDoiMoiHuongVi.JPG", auto, auto)
-        }
-      
         .brand__writer__title{
             @include title($color-white-0, $color-purple-0);
             img {
@@ -43,7 +29,7 @@
             .brand__writer__right{
                 img {
                     width: 100%;
-                    height: 420px;
+                    height: auto;
                   }
             }
            
@@ -55,9 +41,6 @@
         }
     }
 
-   
-
-   
     .brand__story {
         width: 80%;
         margin: 0 auto;
@@ -78,44 +61,83 @@
             }
         }
     }
-    @media screen and (max-width: 600px) {
-        .brand__story {
-            width: 100%;
-            padding: 10px 0;
-            .brand__story__subtitle{
-                h4{
-                    width: 100%;
+        @media screen and (max-width: 600px) {
+            .brand__story {
+                width: 100%;
+                padding: 10px 0;
+                .brand__story__subtitle{
+                    h4{
+                        width: 100%;
+                    }
                 }
             }
         }
-    }
 
     .brand__view{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         .brand__view__title{
             @include titleNoBold($color-yellow-3, $color-purple-0);
         }
     }
+        @media screen and (max-width: 600px) {
+            .brand__view {
+                width: 100%;
+            }
+        }
+
+    .brand__value{
+        width: 70%;
+        margin: 0 auto;
+        .brand__value__title{
+            @include title($color-purple-1, $color-purple-0);
+        }
+        
+        .brand__value_subtitlte{
+            text-align: left;
+            padding-left: 0;
+            @include title($color-white-0, $color-purple-0);
+            p{
+                text-align: left;
+            }
+        }
+        .rand__value__content{
+            .rand__value__left{
+                .brand__value_subtitlte{
+                    text-align: left;
+                    padding-left: 0;
+                }
+                padding: 10px 0;
+                p{
+                    text-align: left;
+                }
+            }
+            .rand__value__right{
+                .brand__value_subtitlte{
+                    text-align: right;
+                    padding-right: 0;
+                    @include title($color-white-0, $color-purple-0);
+                    p{
+                        text-align: right;
+                    }
+                }
+                p{
+                    text-align: right;
+                }
+            }
+            hr{
+                color: $color-purple-0;
+            }
+           
+        }
+
+    }
     @media screen and (max-width: 600px) {
-        .brand__view {
+        .brand__value {
             width: 100%;
         }
     }
 
 }
 
-@media screen and (max-width: 600px) {
-    .brand{
-        .brand__writer{
-            .brand__writer__image {
-                img {
-                    display: none!important;
-                }
-                @include image("/img/thuonghieu/GoiNhoDoiMoiHuongVi.JPG", 355px, 180px)
-            }
-        }
-    }
-    
-}
 

@@ -1009,18 +1009,6 @@ body footer {
   }
 }
 
-.brand .brand__writer .brand__writer__image img {
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  .brand .brand__writer .brand__writer__image img {
-    width: 340px;
-    height: 200px;
-  }
-}
-
 .brand .brand__writer .brand__writer__title {
   background-color: #fff;
   color: #522a73;
@@ -1058,7 +1046,7 @@ body footer {
 
 .brand .brand__writer .brand__writer__content .brand__writer__right img {
   width: 100%;
-  height: 420px;
+  height: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -1106,7 +1094,7 @@ body footer {
 }
 
 .brand .brand__view {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -1122,19 +1110,68 @@ body footer {
   }
 }
 
+.brand .brand__value {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.brand .brand__value .brand__value__title {
+  background-color: #c4abd5;
+  color: #522a73;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.brand .brand__value .brand__value_subtitlte {
+  text-align: left;
+  padding-left: 0;
+  background-color: #fff;
+  color: #522a73;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.brand .brand__value .brand__value_subtitlte p {
+  text-align: left;
+}
+
+.brand .brand__value .rand__value__content .rand__value__left {
+  padding: 10px 0;
+}
+
+.brand .brand__value .rand__value__content .rand__value__left .brand__value_subtitlte {
+  text-align: left;
+  padding-left: 0;
+}
+
+.brand .brand__value .rand__value__content .rand__value__left p {
+  text-align: left;
+}
+
+.brand .brand__value .rand__value__content .rand__value__right .brand__value_subtitlte {
+  text-align: right;
+  padding-right: 0;
+  background-color: #fff;
+  color: #522a73;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.brand .brand__value .rand__value__content .rand__value__right .brand__value_subtitlte p {
+  text-align: right;
+}
+
+.brand .brand__value .rand__value__content .rand__value__right p {
+  text-align: right;
+}
+
+.brand .brand__value .rand__value__content hr {
+  color: #522a73;
+}
+
 @media screen and (max-width: 600px) {
-  .brand .brand__writer .brand__writer__image {
-    background-image: url("/img/thuonghieu/GoiNhoDoiMoiHuongVi.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 180px;
-    width: 355px;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-  }
-  .brand .brand__writer .brand__writer__image img {
-    display: none !important;
+  .brand .brand__value {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
